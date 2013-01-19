@@ -58,9 +58,41 @@
             <version>${appengine.target.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+        	<groupId>org.apache.wicket</groupId>
+        	<artifactId>wicket-core</artifactId>
+        	<version>6.4.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-log4j12</artifactId>
+        	<version>1.6.4</version>
+        </dependency>
+        <dependency>
+        <!-- see http://software.danielwatrous.com/wordpress-plugin-licensing-wicket-on-google-app-engine/  -->
+        	<groupId>org.wicketstuff</groupId>
+        	<artifactId>wicketstuff-gae-initializer</artifactId>
+        	<version>6.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>
+    	<resources>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
