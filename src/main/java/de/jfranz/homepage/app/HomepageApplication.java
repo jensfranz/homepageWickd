@@ -3,7 +3,7 @@ package de.jfranz.homepage.app;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
 
-import de.jfranz.homepage.main.index.Index;
+import de.jfranz.homepage.page.index.Index;
 
 public class HomepageApplication extends WebApplication {
 

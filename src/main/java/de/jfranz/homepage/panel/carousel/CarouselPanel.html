@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- requires jquery and bootstrap additionally -->
+<head>
+<meta charset="utf-8">
+<title>Carousel Template &middot; Bootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="webapp/bootstrap/css/bootstrap-responsive.css"
+	rel="stylesheet" />
+<wicket:head>
+	<link href="carousel.css" rel="stylesheet" />
+	<script>
+		!function($) {
+			$(function() {
+				// carousel demo
+				$('#myCarousel').carousel()
+			})
+		}(window.jQuery)
+	</script>
+</wicket:head>
+</head>
+<body>
+	<!-- Carousel
+		    ================================================== -->
+	<wicket:panel>
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="item active">
+					<wicket:link>
+						<img src="slide-01.jpg" alt="">
+					</wicket:link>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Example headline.</h1>
+							<p class="lead">Cras justo odio, dapibus ac facilisis in,
+								egestas eget quam. Donec id elit non mi porta gravida at eget
+								metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<a class="btn btn-large btn-primary" href="#">Sign up today</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<wicket:link>
+						<img src="slide-02.jpg" alt="">
+					</wicket:link>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Another example headline.</h1>
+							<p class="lead">Cras justo odio, dapibus ac facilisis in,
+								egestas eget quam. Donec id elit non mi porta gravida at eget
+								metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<a class="btn btn-large btn-primary" href="#">Learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<wicket:link>
+						<img src="slide-03.jpg" alt="">
+					</wicket:link>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>One more for good measure.</h1>
+							<p class="lead">Cras justo odio, dapibus ac facilisis in,
+								egestas eget quam. Donec id elit non mi porta gravida at eget
+								metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="right carousel-control" href="#myCarousel"
+				data-slide="next">&rsaquo;</a>
+		</div>
+	</wicket:panel>
+		<!-- /.carousel -->
+		<!-- Le javascript
+		    ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

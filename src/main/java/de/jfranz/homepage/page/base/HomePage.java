@@ -1,4 +1,4 @@
-package de.jfranz.homepage.main;
+package de.jfranz.homepage.page.base;
 
 import org.apache.wicket.markup.html.WebPage;
 

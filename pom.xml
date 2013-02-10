@@ -108,7 +108,7 @@
 						</resource>
 						<resource>
 							<filtering>false</filtering>
-							<directory>${basedir}/src/main/html</directory>
+							<directory>${basedir}/src/main/java</directory>
 							<includes>
 								<include>**</include>
 							</includes>
