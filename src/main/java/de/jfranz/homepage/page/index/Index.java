@@ -1,13 +1,18 @@
 package de.jfranz.homepage.page.index;
 
-import org.apache.wicket.markup.html.basic.Label;
-
-import de.jfranz.homepage.page.base.HomePage;
+import de.jfranz.homepage.page.base.BasePage;
 import de.jfranz.homepage.panel.carousel.CarouselPanel;
+import de.jfranz.homepage.panel.menu.MenuPanel;
 
-public class Index extends HomePage {
+public class Index extends BasePage {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Index() {
-		add(new Label("label", "Under construction."));
+		add(new MenuPanel("menu"));
 		add(new CarouselPanel("carousel"));
 	}
 }

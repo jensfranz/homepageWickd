@@ -3,17 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Home</title>
-<wicket:link>
-	<link href="../base/bootstrap/css/bootstrap.css" rel="stylesheet" />
-	<link href="../base/bootstrap/css/bootstrap-responsive.css"
-		rel="stylesheet" />
-	<script src="../base/bootstrap/js/jquery.js"></script>
-	<script src="../base/bootstrap/js/bootstrap.min.js"></script>
-</wicket:link>
 </head>
 <body>
-	<h1 wicket:id="label">here text</h1>
-	<div wicket:id="carousel">carousel</div>
-	<!-- <div wicket:id="menupanel"></div>  -->
+	<wicket:extend>
+		<div wicket:id="menu"></div>
+		<div wicket:id="carousel">carousel</div>
+	</wicket:extend>
 </body>
 </html>
